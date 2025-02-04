@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Token Pair Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./mexc.js" type="module" defer></script>
+    <script src="./bitget.js" type="module" defer></script>
+    <script src="./kucoin.js" type="module" defer></script>
+    <script src="./kraken.js" type="module" defer></script>
+
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold text-center mb-6">Crypto Token Pair Prices</h1>
+        <div class="overflow-x-auto">
+            <table class="table-auto border-collapse border border-gray-300 w-full text-sm">
+                <thead>
+                    <tr>
+                        <th class="border border-gray-300 px-4 py-2 bg-blue-500 text-white text-left">CEX</th>
+                        <th class="border border-gray-300 px-4 py-2 bg-blue-500 text-white text-left">BTC/USDT</th>
+                        <th class="border border-gray-300 px-4 py-2 bg-blue-500 text-white text-left">ETH/USDT</th>
+                        <th class="border border-gray-300 px-4 py-2 bg-blue-500 text-white text-left">BNB/USDT</th>
+                        <th class="border border-gray-300 px-4 py-2 bg-blue-500 text-white text-left">SOL/USDT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-50 hover:bg-gray-100">
+                        <td class="border border-gray-300 px-4 py-2 font-medium">Bitget</td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 btc-usdt-bitget"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 eth-usdt-bitget"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 bnb-usdt-bitget"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 sol-usdt-bitget"></td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="border border-gray-300 px-4 py-2 font-medium">MEXC</td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 btc-usdt-mexc"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 eth-usdt-mexc"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 bnb-usdt-mexc"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 sol-usdt-mexc"></td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-100">
+                        <td class="border border-gray-300 px-4 py-2 font-medium">KUCOIN</td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 btc-usdt-kucoin"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 eth-usdt-kucoin"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 bnb-usdt-kucoin"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 sol-usdt-kucoin"></td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-gray-100">
+                        <td class="border border-gray-300 px-4 py-2 font-medium">Kraken</td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 btc-usdt-kraken"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 eth-usdt-kraken"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 bnb-usdt-kraken"></td>
+                        <td class="border border-gray-300 px-4 py-2 text-green-600 sol-usdt-kraken"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
